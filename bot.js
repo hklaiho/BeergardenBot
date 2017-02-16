@@ -8,7 +8,7 @@
   var tasks = require('./tasks.js');
 
   // Schedules every day at 1PM
-  Cron.schedule('0 0 13 1/1 * ? *', function(err){
+  Cron.schedule('0 0 13 * * 0-6', function(err){
     tasks.fetchAndTweet();
   });
 
